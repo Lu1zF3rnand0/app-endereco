@@ -1,26 +1,22 @@
-package br.edu.infnet.apiendereco.model.domain;
+package br.edu.infnet.appendereco.model.domain;
 
-import javax.persistence.*;
-
-@Entity
-@Table(
-        name = "TEndereco",
-        uniqueConstraints = @UniqueConstraint(columnNames = {"cep"})
-)
 public class Endereco {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+
     private Integer id;
-    @Column(nullable = false)
     private String cep;
     private String logradouro;
     private String complemento;
-    @Column(nullable = false)
     private String bairro;
-    @Column(nullable = false)
     private String localidade;
-    @Column(nullable = false)
+
     private String uf;
+
+    public Endereco(String cep) {
+        this.setCep(cep);
+    }
+
+    public Endereco() {
+    }
 
     public Integer getId() {
         return id;
