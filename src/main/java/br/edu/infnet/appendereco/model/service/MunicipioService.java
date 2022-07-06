@@ -1,4 +1,4 @@
-package br.edu.infnet.appendereco.model.domain.service;
+package br.edu.infnet.appendereco.model.service;
 
 import br.edu.infnet.appendereco.client.MunicipioClient;
 import br.edu.infnet.appendereco.model.domain.Municipio;

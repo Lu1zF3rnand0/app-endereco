@@ -1,7 +1,14 @@
 package br.edu.infnet.appendereco.model.domain;
 
-public class Endereco {
+import javax.persistence.*;
 
+@Entity
+@Table(
+        name="TEndereco",
+        uniqueConstraints = @UniqueConstraint(columnNames={"cep"}))
+public class Endereco {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String cep;
     private String logradouro;

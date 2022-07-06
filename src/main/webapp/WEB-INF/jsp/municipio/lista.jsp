@@ -9,7 +9,7 @@
 </head>
 <body>
 
-<c:import url="/WEB-INF/jsp/menu.jsp"/>
+<c:import url="WEB-INF/jsp/menu.jsp"/>
 
 <div class="container mt-3">
     <h2>Lista de Municipios</h2>
